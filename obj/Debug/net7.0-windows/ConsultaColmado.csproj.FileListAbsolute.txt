@@ -1,0 +1,17 @@
+C:\Users\Otoniel\source\repos\ConsultaColmado\bin\Debug\net7.0-windows\ConsultaColmado.exe
+C:\Users\Otoniel\source\repos\ConsultaColmado\bin\Debug\net7.0-windows\ConsultaColmado.deps.json
+C:\Users\Otoniel\source\repos\ConsultaColmado\bin\Debug\net7.0-windows\ConsultaColmado.runtimeconfig.json
+C:\Users\Otoniel\source\repos\ConsultaColmado\bin\Debug\net7.0-windows\ConsultaColmado.dll
+C:\Users\Otoniel\source\repos\ConsultaColmado\bin\Debug\net7.0-windows\ConsultaColmado.pdb
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.Form2.resources
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.csproj.GenerateResource.cache
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.AssemblyInfoInputs.cache
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.AssemblyInfo.cs
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.csproj.CoreCompileInputs.cache
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.dll
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\refint\ConsultaColmado.dll
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.pdb
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.genruntimeconfig.cache
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ref\ConsultaColmado.dll
+C:\Users\Otoniel\source\repos\ConsultaColmado\obj\Debug\net7.0-windows\ConsultaColmado.s.resources
