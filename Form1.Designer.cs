@@ -48,7 +48,7 @@
             lblsucursal = new Label();
             label10 = new Label();
             label12 = new Label();
-            label11 = new Label();
+            lblvalor = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -60,7 +60,8 @@
             // 
             // btnbuscar
             // 
-            btnbuscar.Location = new Point(72, 175);
+            btnbuscar.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnbuscar.Location = new Point(72, 173);
             btnbuscar.Name = "btnbuscar";
             btnbuscar.Size = new Size(75, 23);
             btnbuscar.TabIndex = 0;
@@ -71,26 +72,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(346, 38);
+            label1.Font = new Font("Arial Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(151, 24);
+            label1.Size = new Size(197, 33);
             label1.TabIndex = 1;
             label1.Text = "Colmado Kiko";
             // 
             // txtcedula
             // 
-            txtcedula.Location = new Point(125, 112);
+            txtcedula.Location = new Point(140, 115);
             txtcedula.Name = "txtcedula";
-            txtcedula.Size = new Size(153, 23);
+            txtcedula.Size = new Size(185, 23);
             txtcedula.TabIndex = 2;
             // 
             // lblcedula
             // 
             lblcedula.AutoSize = true;
-            lblcedula.Location = new Point(700, 136);
+            lblcedula.Font = new Font("Arial", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            lblcedula.Location = new Point(784, 158);
             lblcedula.Name = "lblcedula";
-            lblcedula.Size = new Size(47, 15);
+            lblcedula.Size = new Size(65, 19);
             lblcedula.TabIndex = 6;
             lblcedula.Text = "Cedula:";
             lblcedula.Visible = false;
@@ -98,82 +100,100 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(185, 262);
+            label5.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(12, 262);
             label5.Name = "label5";
-            label5.Size = new Size(46, 15);
+            label5.Size = new Size(58, 17);
             label5.TabIndex = 8;
             label5.Text = "Factura";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(610, 262);
+            label7.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(502, 262);
             label7.Name = "label7";
-            label7.Size = new Size(43, 15);
+            label7.Size = new Size(53, 17);
             label7.TabIndex = 10;
             label7.Text = "Detalle";
             // 
             // dgvfactura
             // 
+            dgvfactura.BackgroundColor = Color.White;
+            dgvfactura.BorderStyle = BorderStyle.None;
             dgvfactura.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvfactura.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
             dgvfactura.Location = new Point(12, 298);
             dgvfactura.Name = "dgvfactura";
+            dgvfactura.ReadOnly = true;
             dgvfactura.RowTemplate.Height = 25;
-            dgvfactura.Size = new Size(399, 150);
+            dgvfactura.Size = new Size(449, 150);
             dgvfactura.TabIndex = 12;
+            dgvfactura.CellDoubleClick += dgvfactura_CellDoubleClick;
             // 
             // Column1
             // 
             Column1.HeaderText = "Id";
             Column1.Name = "Column1";
+            Column1.ReadOnly = true;
             // 
             // Column2
             // 
             Column2.HeaderText = "Cliente";
             Column2.Name = "Column2";
+            Column2.ReadOnly = true;
             // 
             // Column3
             // 
             Column3.HeaderText = "Cant Items";
             Column3.Name = "Column3";
+            Column3.ReadOnly = true;
             // 
             // Column4
             // 
             Column4.HeaderText = "Fecha ";
             Column4.Name = "Column4";
+            Column4.ReadOnly = true;
             // 
             // dgvdetalle
             // 
+            dgvdetalle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvdetalle.BackgroundColor = Color.White;
+            dgvdetalle.BorderStyle = BorderStyle.None;
             dgvdetalle.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvdetalle.Columns.AddRange(new DataGridViewColumn[] { Column5, Colunma6, Column6 });
-            dgvdetalle.Location = new Point(463, 298);
+            dgvdetalle.Location = new Point(502, 298);
             dgvdetalle.Name = "dgvdetalle";
+            dgvdetalle.ReadOnly = true;
             dgvdetalle.RowTemplate.Height = 25;
-            dgvdetalle.Size = new Size(344, 150);
+            dgvdetalle.Size = new Size(417, 150);
             dgvdetalle.TabIndex = 13;
             // 
             // Column5
             // 
             Column5.HeaderText = "Producto ";
             Column5.Name = "Column5";
+            Column5.ReadOnly = true;
             // 
             // Colunma6
             // 
             Colunma6.HeaderText = "Cantidad ";
             Colunma6.Name = "Colunma6";
+            Colunma6.ReadOnly = true;
             // 
             // Column6
             // 
             Column6.HeaderText = "Precio";
             Column6.Name = "Column6";
+            Column6.ReadOnly = true;
             // 
             // lblnombre
             // 
             lblnombre.AutoSize = true;
-            lblnombre.Location = new Point(453, 112);
+            lblnombre.Font = new Font("Arial", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            lblnombre.Location = new Point(476, 112);
             lblnombre.Name = "lblnombre";
-            lblnombre.Size = new Size(54, 15);
+            lblnombre.Size = new Size(71, 19);
             lblnombre.TabIndex = 11;
             lblnombre.Text = "Nombre:";
             lblnombre.Visible = false;
@@ -181,9 +201,10 @@
             // lblapellido
             // 
             lblapellido.AutoSize = true;
-            lblapellido.Location = new Point(453, 161);
+            lblapellido.Font = new Font("Arial", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            lblapellido.Location = new Point(476, 161);
             lblapellido.Name = "lblapellido";
-            lblapellido.Size = new Size(54, 15);
+            lblapellido.Size = new Size(72, 19);
             lblapellido.TabIndex = 16;
             lblapellido.Text = "Apellido:";
             lblapellido.Visible = false;
@@ -191,9 +212,10 @@
             // lblsucursal
             // 
             lblsucursal.AutoSize = true;
-            lblsucursal.Location = new Point(610, 136);
+            lblsucursal.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblsucursal.Location = new Point(637, 158);
             lblsucursal.Name = "lblsucursal";
-            lblsucursal.Size = new Size(54, 15);
+            lblsucursal.Size = new Size(72, 18);
             lblsucursal.TabIndex = 18;
             lblsucursal.Text = "Sucursal:";
             lblsucursal.Visible = false;
@@ -201,10 +223,10 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(667, 18);
+            label10.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label10.Location = new Point(790, 9);
             label10.Name = "label10";
-            label10.Size = new Size(129, 16);
+            label10.Size = new Size(122, 19);
             label10.TabIndex = 19;
             label10.Text = "Registro Clientes";
             label10.Click += label10_Click;
@@ -212,64 +234,69 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(700, 464);
+            label12.Location = new Point(845, 464);
             label12.Name = "label12";
             label12.Size = new Size(35, 15);
             label12.TabIndex = 21;
             label12.Text = "Total:";
             // 
-            // label11
+            // lblvalor
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(741, 464);
-            label11.Name = "label11";
-            label11.Size = new Size(33, 15);
-            label11.TabIndex = 22;
-            label11.Text = "Valor";
-            label11.Visible = false;
+            lblvalor.AutoSize = true;
+            lblvalor.Location = new Point(886, 464);
+            lblvalor.Name = "lblvalor";
+            lblvalor.Size = new Size(33, 15);
+            lblvalor.TabIndex = 22;
+            lblvalor.Text = "Valor";
+            lblvalor.Visible = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(393, 112);
             label2.Name = "label2";
-            label2.Size = new Size(54, 15);
+            label2.Size = new Size(68, 18);
             label2.TabIndex = 23;
             label2.Text = "Nombre:";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(393, 161);
             label3.Name = "label3";
-            label3.Size = new Size(54, 15);
+            label3.Size = new Size(69, 18);
             label3.TabIndex = 24;
             label3.Text = "Apellido:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(610, 112);
+            label4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(637, 109);
             label4.Name = "label4";
-            label4.Size = new Size(54, 15);
+            label4.Size = new Size(72, 18);
             label4.TabIndex = 25;
             label4.Text = "Sucursal:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(700, 112);
+            label6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(784, 109);
             label6.Name = "label6";
-            label6.Size = new Size(47, 15);
+            label6.Size = new Size(62, 18);
             label6.TabIndex = 26;
             label6.Text = "Cedula:";
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label9.Location = new Point(72, 115);
             label9.Name = "label9";
-            label9.Size = new Size(47, 15);
+            label9.Size = new Size(62, 18);
             label9.TabIndex = 27;
             label9.Text = "Cedula:";
             // 
@@ -277,13 +304,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(819, 499);
+            BackColor = Color.White;
+            ClientSize = new Size(956, 537);
             Controls.Add(label9);
             Controls.Add(label6);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label11);
+            Controls.Add(lblvalor);
             Controls.Add(label12);
             Controls.Add(label10);
             Controls.Add(lblsucursal);
@@ -326,7 +354,7 @@
         private DataGridViewTextBoxColumn Colunma6;
         private DataGridViewTextBoxColumn Column6;
         private Label label12;
-        private Label label11;
+        private Label lblvalor;
         private Label label2;
         private Label label3;
         private Label label4;

@@ -30,23 +30,22 @@ namespace ConsultaColmado
             dataGridView_nombre.DataSource = null;
             clientes.Add(bot);
             dataGridView_nombre.DataSource = clientes;
-            //float id = int.Parse(txtcedula.Text);
-            MessageBox.Show(clientes[3].nombre);
+
 
         }
 
-         public static void inicializacion()
-         {
+        public static void inicializacion()
+        {
             clientes = new List<Cliente>()
              {
-                 new Cliente("Juan", "Perez", "00100000000", "Santo Domingo"),
+                 new Cliente("Juan", "Perez", "40100000000", "Santo Domingo"),
                  new Cliente("Tania", "Imbert", "402546122355", "Santiago"),
-                 new Cliente("Francisco", "Perez", "00100000000", "Santo Domingo")
+                 new Cliente("Francisco", "Perez", "03805600000", "Santo Domingo")
 
              };
 
 
-         }
+        }
 
 
 
@@ -58,6 +57,7 @@ namespace ConsultaColmado
             this.Hide();
             registar.Show();
         }
+
     }
 
 

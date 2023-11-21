@@ -47,7 +47,7 @@
             // btnregistrar
             // 
             btnregistrar.BackColor = SystemColors.ButtonFace;
-            btnregistrar.Location = new Point(525, 211);
+            btnregistrar.Location = new Point(640, 265);
             btnregistrar.Name = "btnregistrar";
             btnregistrar.Size = new Size(75, 23);
             btnregistrar.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // txtapellido
             // 
-            txtapellido.Location = new Point(457, 89);
+            txtapellido.Location = new Point(542, 110);
             txtapellido.Name = "txtapellido";
             txtapellido.Size = new Size(173, 23);
             txtapellido.TabIndex = 2;
@@ -65,17 +65,17 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(300, 22);
+            label2.Font = new Font("Arial Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(292, 18);
             label2.Name = "label2";
-            label2.Size = new Size(151, 24);
+            label2.Size = new Size(197, 33);
             label2.TabIndex = 3;
             label2.Text = "Colmado Kiko";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(308, 211);
+            label6.Location = new Point(38, 283);
             label6.Name = "label6";
             label6.Size = new Size(116, 15);
             label6.TabIndex = 12;
@@ -84,7 +84,7 @@
             // lblapellido
             // 
             lblapellido.AutoSize = true;
-            lblapellido.Location = new Point(397, 92);
+            lblapellido.Location = new Point(482, 113);
             lblapellido.Name = "lblapellido";
             lblapellido.Size = new Size(54, 15);
             lblapellido.TabIndex = 13;
@@ -93,7 +93,7 @@
             // lblnombre
             // 
             lblnombre.AutoSize = true;
-            lblnombre.Location = new Point(38, 100);
+            lblnombre.Location = new Point(38, 113);
             lblnombre.Name = "lblnombre";
             lblnombre.Size = new Size(54, 15);
             lblnombre.TabIndex = 14;
@@ -101,7 +101,7 @@
             // 
             // txtnombre
             // 
-            txtnombre.Location = new Point(98, 97);
+            txtnombre.Location = new Point(98, 113);
             txtnombre.Name = "txtnombre";
             txtnombre.Size = new Size(179, 23);
             txtnombre.TabIndex = 15;
@@ -109,7 +109,7 @@
             // lblcedula
             // 
             lblcedula.AutoSize = true;
-            lblcedula.Location = new Point(38, 177);
+            lblcedula.Location = new Point(38, 226);
             lblcedula.Name = "lblcedula";
             lblcedula.Size = new Size(47, 15);
             lblcedula.TabIndex = 16;
@@ -117,18 +117,18 @@
             // 
             // txtcedula
             // 
-            txtcedula.Location = new Point(98, 173);
+            txtcedula.Location = new Point(98, 218);
             txtcedula.Name = "txtcedula";
-            txtcedula.Size = new Size(179, 23);
+            txtcedula.Size = new Size(190, 23);
             txtcedula.TabIndex = 18;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(574, 9);
+            label1.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.Location = new Point(580, 18);
             label1.Name = "label1";
-            label1.Size = new Size(141, 16);
+            label1.Size = new Size(135, 19);
             label1.TabIndex = 21;
             label1.Text = "Consultar Clientes ";
             label1.Click += label1_Click;
@@ -136,7 +136,7 @@
             // lblsucursal
             // 
             lblsucursal.AutoSize = true;
-            lblsucursal.Location = new Point(397, 173);
+            lblsucursal.Location = new Point(482, 221);
             lblsucursal.Name = "lblsucursal";
             lblsucursal.Size = new Size(54, 15);
             lblsucursal.TabIndex = 22;
@@ -146,18 +146,22 @@
             // 
             cbsucursal.FormattingEnabled = true;
             cbsucursal.Items.AddRange(new object[] { "Puerto Plata ", "Santiago ", "Santo Domingo ", "San Pedro de Macoris " });
-            cbsucursal.Location = new Point(457, 170);
+            cbsucursal.Location = new Point(542, 218);
             cbsucursal.Name = "cbsucursal";
             cbsucursal.Size = new Size(173, 23);
             cbsucursal.TabIndex = 23;
             // 
             // dataGridView_nombre
             // 
+            dataGridView_nombre.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView_nombre.BackgroundColor = Color.White;
+            dataGridView_nombre.BorderStyle = BorderStyle.None;
             dataGridView_nombre.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_nombre.Location = new Point(173, 243);
+            dataGridView_nombre.Location = new Point(38, 301);
             dataGridView_nombre.Name = "dataGridView_nombre";
+            dataGridView_nombre.ReadOnly = true;
             dataGridView_nombre.RowTemplate.Height = 25;
-            dataGridView_nombre.Size = new Size(427, 150);
+            dataGridView_nombre.Size = new Size(677, 171);
             dataGridView_nombre.TabIndex = 24;
             // 
             // Form2
@@ -165,7 +169,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(727, 405);
+            ClientSize = new Size(762, 514);
             Controls.Add(dataGridView_nombre);
             Controls.Add(cbsucursal);
             Controls.Add(lblsucursal);
