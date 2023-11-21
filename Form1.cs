@@ -80,7 +80,7 @@ namespace ConsultaColmado
                 {
                     if (x.id == id)
                     {
-                        dgvdetalle.Rows.Add(products[id].nombre, products[id].cantidad, products[id].precio);
+                        dgvdetalle.Rows.Add(x.id , x.cantidad, x.precio);
                     }
 
                 }
